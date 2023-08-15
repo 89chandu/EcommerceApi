@@ -3,6 +3,7 @@ require("dotenv").config();
 const bodyParser = require('body-parser')
 const StoreRoute = require("./Routes/StoreItems");
 const CartRoute = require('./Routes/CartItems')
+const ProductRoute = require('./Routes/Products')
 const UserRoute = require('./Routes/Users')
 const connectDB = require("./DB/connect");
 const cors = require('cors');
@@ -15,6 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/store", StoreRoute);
 app.use('/cart', CartRoute);
+app.use('/Products', ProductRoute);
 app.use('/users', UserRoute)
 
 
@@ -24,6 +26,7 @@ async function serverStart() {
 		await connectDB();
 		app.listen(PORT, () => {
 			console.log(`server listening on port ${PORT}`);
+
 		});
 	} catch (error) {
 		console.log(error);
