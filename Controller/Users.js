@@ -43,36 +43,35 @@ const generateToken = (id, email) => {
 };
 
 const Login = async (req, res) => {
-    try {
-        const { email, password } = req.body;
-        const existingUser = await UserSchema.findOne({
-            email: email,
-        });
+	try {
+		const { email, password } = req.body;
+		const existingUser = await UserSchema.findOne({
+			email: email,
+		});
 
-        if (!existingUser)
-            res.status(401).json({
-                msg: "No account with this email",
-                success: false,
-            });
-        else {
-            let passwordMatch = await bcrypt.compare(password, existingUser.password);
-            if (!passwordMatch) res.status(401).json({ msg: "Wrong password", success: false });
-            else
-                res.status(201).json({
-                    msg: "successfully logged in",
-                    success: true,
-                    token: generateToken(existingUser._id, existingUser.email),
-                });
-        }
-    } catch (error) {
-        console.log(error);
-        res.status(401).json({
-            msg: "Not Authorized",
-            error: error,
-            success: false,
-        });
-    }
+		if (!existingUser)
+			res.status(401).json({
+				msg: "No account with this email",
+				success: false,
+			});
+		else {
+			let passwordMatch = await bcrypt.compare(password, existingUser.password);
+			if (!passwordMatch) res.status(401).json({ msg: "Wrong password", success: false });
+			else
+				res.status(201).json({
+					msg: "successfully logged in",
+					success: true,
+					token: generateToken(existingUser._id, existingUser.email),
+				});
+		}
+	} catch (error) {
+		console.log(error);
+		res.staus(401).json({
+			msg: "Not Authorized",
+			error: error,
+			success: false,
+		});
+	}
 };
-
 
 module.exports = { SignUp, Login };
