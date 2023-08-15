@@ -16,8 +16,15 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/store", StoreRoute);
 app.use('/cart', CartRoute);
-app.use('/Products', ProductRoute);
+app.use('/products', ProductRoute);
 app.use('/users', UserRoute)
+
+app.get("/", (req, res) => {
+	res.send("Hi, I am live ");
+  });
+  
+  // middleware or to set router
+  app.use("/api/products", products_routes);
 
 
 const PORT = process.env.PORT||3005
