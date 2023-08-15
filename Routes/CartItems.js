@@ -4,7 +4,7 @@ const { AddToCart, getAllCartItems, RemoveFromCart,CartItemsNumber } = require('
 const AuthUser = require('../Auth/AuthUser')
 
 router.route('/addToCart').post(AuthUser,AddToCart);
-router.route('/getAllCartItems').get(AuthUser,getAllCartItems)
+router.route('/getAllCartItems').get(AuthUser,getAllCartItems);
 router.route('/RemoveFromCart/:ProductId').delete(RemoveFromCart);
 router.route('/CartNumber').get(AuthUser,CartItemsNumber);
 

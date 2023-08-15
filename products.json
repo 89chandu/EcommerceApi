@@ -1,47 +1,44 @@
 [
-
-
- {
-    "description":"s51",
-    "price":122,
-    "anime":"samsung",
-    "img_id": "https://www.epicstuff.com/cdn/shop/products/81tJDhJrU0L._SL1500_480x.jpg?v=1671174167"
- },
- 
- {
-    "description":"s51",
-    "price":122,
-    "anime":"samsung",
-    "img_id": "https://www.epicstuff.com/cdn/shop/products/81tJDhJrU0L._SL1500_480x.jpg?v=1671174167"
- },
- 
- {
-    "description":"s51",
-    "price":122,
-    "anime":"samsung",
-    "img_id": "https://www.epicstuff.com/cdn/shop/products/81tJDhJrU0L._SL1500_480x.jpg?v=1671174167"
-    
- },
- 
- {
-    "description":"s51",
-    "price":122,
-    "anime":"samsung",
-    "img_id": "https://www.epicstuff.com/cdn/shop/products/81tJDhJrU0L._SL1500_480x.jpg?v=1671174167"
- },
- 
- {
-    "description":"s51",
-    "price":122,
-    "anime":"samsung",
-    "img_id": "https://www.epicstuff.com/cdn/shop/products/81tJDhJrU0L._SL1500_480x.jpg?v=1671174167"
- },
- 
- {
-    "description":"s51",
-    "price":122,
-    "anime":"samsung",
-    "img_id": "https://www.epicstuff.com/cdn/shop/products/81tJDhJrU0L._SL1500_480x.jpg?v=1671174167"
- }
-
-]
+   {
+     "anime": "iphone",
+     "price": 154,
+     "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+     "description": "mobile"
+   },
+   {
+    "anime": "iphone",
+    "price": 154,
+    "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+    "description": "mobile"
+  },
+  {
+    "anime": "iphone",
+    "price": 154,
+    "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+    "description": "mobile"
+  },
+  {
+    "anime": "iphone",
+    "price": 154,
+    "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+    "description": "mobile"
+  },
+  {
+    "anime": "iphone",
+    "price": 154,
+    "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+    "description": "mobile"
+  },
+  {
+    "anime": "iphone",
+    "price": 154,
+    "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+    "description": "mobile"
+  },
+  {
+    "anime": "iphone",
+    "price": 154,
+    "img_id": "https://5.imimg.com/data5/SELLER/Default/2022/2/TM/BC/ET/27399423/check-shirt-500x500.jpg",
+    "description": "mobile"
+  }
+ ]
