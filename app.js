@@ -11,19 +11,18 @@ const app = Express();
 
  
 app.use(cors());
+
 app.use(bodyParser.json());
 
-app.use('/cart', CartRoute);
-app.use('/users', UserRoute)
+
 
 app.get("/", (req, res) => {
 	res.send("Hi, I am live ");
   });
 
+  app.use('/users', UserRoute)
   app.use('/store', StoreRoute);
-
-
-
+  app.use('/cart', CartRoute);
 
 
 const PORT = process.env.PORT||3005
