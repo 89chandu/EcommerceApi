@@ -1,12 +1,7 @@
 const mongoose = require("mongoose");
 
-
-
 const connectDB = async () => {
 	try {
-
-		
-		
 		const conn = await mongoose.connect(
 			`mongodb+srv://chandubopche321:k7bdZLhXh8ii5bpy@cluster0.mbmsuxg.mongodb.net/EcomReact?retryWrites=true&w=majority`,
 			{
@@ -20,7 +15,3 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
-
-
-
-
