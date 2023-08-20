@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   app.use('/cart', CartRoute);
 
 
-const PORT = process.env.PORT||3005
+const PORT = process.env.PORT||3000
 async function serverStart() {
 	try {
 		await connectDB();
