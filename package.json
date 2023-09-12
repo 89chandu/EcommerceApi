@@ -9,6 +9,10 @@
     "start_dev": "nodemon app.js",
     "dev": "nodemon server.js"
   },
+
+  "engines": {
+    "node": "14.17.5"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
