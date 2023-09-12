@@ -8,33 +8,28 @@ const connectDB = require("./DB/connect");
 const cors = require('cors');
 const app = Express();
 
-
- 
 app.use(cors());
-
 app.use(bodyParser.json());
 
-
-
 app.get("/", (req, res) => {
-	res.send("Hi, I am live ");
-  });
+  res.send("Hi, I am live ");
+});
 
-  app.use('/users', UserRoute)
-  app.use('/store', StoreRoute);
-  app.use('/cart', CartRoute);
+app.use('/users', UserRoute)
+app.use('/store', StoreRoute);
+app.use('/cart', CartRoute);
 
+const PORT = process.env.PORT || 3000;
 
-const PORT = process.env.PORT||3009
 async function serverStart() {
-	try {
-		await connectDB(process.env.MONGODB_URL);
-		app.listen(PORT, () => {
-			console.log(`Yes I am connected ${PORT}`);
-
-		});
-	} catch (error) {
-		console.log(error);
-	}
+  try {
+    await connectDB();
+    app.listen(PORT, () => {
+      console.log(`Yes, I am connected on port ${PORT}`);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
+
 serverStart();
