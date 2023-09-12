@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT||3000
 async function serverStart() {
 	try {
-		await connectDB();
+		await connectDB(process.env.MONGODB_URL);
 		app.listen(PORT, () => {
 			console.log(`Yes I am connected ${PORT}`);
 
