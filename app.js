@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   app.use('/cart', CartRoute);
 
 
-const PORT = process.env.PORT||3000
+const PORT = process.env.PORT||3008
 async function serverStart() {
 	try {
 		await connectDB(process.env.MONGODB_URL);
