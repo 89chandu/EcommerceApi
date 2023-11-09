@@ -66,7 +66,7 @@ const Login = async (req, res) => {
 		}
 	} catch (error) {
 		console.log(error);
-		res.staus(401).json({
+		res.status(401).json({
 			msg: "Not Authorized",
 			error: error,
 			success: false,
